@@ -27,6 +27,8 @@ BOARD_HARDWARE_CLASS += device/sony/sirius/cmhw
 
 # Kernel properties
 TARGET_KERNEL_CONFIG := lineageos_shinano_sirius_defconfig
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 25
